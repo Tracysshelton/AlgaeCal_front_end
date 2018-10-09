@@ -1,3 +1,8 @@
-# AlgaeCal_front_end
-AlgaeCal Front End Developer Test, part 1 and  Part 2
-This task is to be completed 7 days after recieving it and all folders and files will be uploaded to a GIT repository.
+// include custom jQuery
+function lasest_version_jquery() {
+
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', array(), null, true);
+
+}
+add_action('wp_enqueue_scripts', 'lasest_version_jquery');
